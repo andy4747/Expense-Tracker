@@ -1,0 +1,97 @@
+{% extends 'cms_app/base.html' %}
+
+{% block content %}
+
+<style>
+
+.upd-rem .btn2{
+	margin-left: 940px;
+	margin-bottom: 30px;
+}
+
+.upd-rem .btn1{
+	margin-left: 320px;
+	margin-bottom: 30px;
+}
+
+</style>
+
+<br>
+
+<div class="row">
+	<div class="col">
+		<div class="col-md">
+			<div class="card text-center text-black  mb-3" id="total-orders">
+			  	<div class="card-header bg-info">
+			  		<h5 class="card-title">Total Budget</h5>
+			  	</div>
+			  	<div class="card-body">
+			    	<h3 class="card-title">160000</h3>
+			  	</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="col-md">
+			<div class="card text-center text-black  mb-3" id="orders-delivered">
+			  	<div class="card-header bg-info">
+			  		<h5 class="card-title">Total Items</h5>
+			  	</div>
+			  	<div class="card-body">
+			    	<h3 class="card-title">{{total_items}}</h3>
+			  	</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="col-md">
+			<div class="card text-center text-black  mb-3" id="orders-pending">
+			  	<div class="card-header bg-info">
+			  		<h5 class="card-title">Spent Budget</h5>
+			  	</div>
+			  	<div class="card-body">
+			    	<h3 class="card-title">{{total_price}}</h3>
+			  	</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<br>
+
+
+<div class="upd-rem">
+<a href="update" class="btn btn-primary pl-5 pr-5 btn1">Update</a>
+<a href="remove" class="btn btn-danger pl-5 pr-5 btn2">Remove</a>
+</div>
+
+
+<div class="row">
+	<div class="col-md-8 center">
+		<hr>
+		<div class="card card-body">
+            <!-- <button type="button" class="btn btn-primary">Add Item</button> -->
+			<a href="add" class="btn btn-primary">Add Item</a>
+			<table class="table table-xl">
+				<tr>
+					<!-- <th>ID</th> -->
+					<th>Name</th>
+                    <th>Price</th>
+                </tr>
+                {% for items in expenses %}
+                    <tr>
+                        <!-- <td>{{ items.id }}</td> -->
+                        <td>{{items.name}}</td>
+                        <td>{{items.price}}</td>
+                    </tr>
+                {% endfor %}
+		
+			</table>
+		</div>
+	</div>
+
+</div>
+
+{% endblock %}

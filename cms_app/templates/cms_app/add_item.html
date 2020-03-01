@@ -1,0 +1,19 @@
+{% extends 'cms_app/base.html' %}
+
+{% block content %}
+<br>
+<br>
+<form method="POST" action="">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="name">Item-Name:</label>
+        <input type="text" class="form-control" name="item-name" placeholder="Product Name">
+        <br> <br>
+        <label for="price">Price:</label>
+        <input type="text" class="form-control" name="price" placeholder="Price">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </div>
+</form>
+{% endblock %}

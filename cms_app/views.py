@@ -30,8 +30,12 @@ def add_item(request):
         name = request.POST['item-name']
         price = request.POST['price']
 
-        Expenses.objects.create(name=name.lower(),price=price.lower())
-        return redirect('home')
+        if Expenses.objects.filter(name=name).exists():
+            messages.info(request,"Item already exists (choose another name)")
+            return redirect('add')
+        else:
+            Expenses.objects.create(name=name.lower(),price=price.lower())
+            return redirect('home')
 
     return render(request, 'cms_app/add_item.html')
 

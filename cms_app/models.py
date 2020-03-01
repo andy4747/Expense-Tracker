@@ -10,9 +10,3 @@ class Expenses(models.Model):
     def __str__(self):
         return self.name
     
-class AppUsers(models.Model):
-    first_name = models.CharField(max_length=50, null=True)
-    last_name = models.CharField(max_length=50, null=True)
-    username = models.CharField(max_length=255, blank=False)
-    email = models.EmailField(max_length=255, blank=False)
-    # password = models.CharField(max_length=32, widget=forms.PasswordInput)

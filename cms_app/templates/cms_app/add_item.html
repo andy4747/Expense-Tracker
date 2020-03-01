@@ -12,6 +12,11 @@
         <label for="price">Price:</label>
         <input type="text" class="form-control" name="price" placeholder="Price">
         <br>
+        {% if messages %}
+        {% for message in messages %}
+            <p class="error">{{message}}</p>
+        {% endfor %}
+        {% endif %}
         <br>
         <input type="submit" value="Submit">
     </div>

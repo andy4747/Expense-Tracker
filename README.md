@@ -35,7 +35,7 @@ Then go to https://localhost:8000/ in your browser and enjoy
 
 ## Built With
 
-* [Django](djangoproject.com) - The web framework used
+* [Django](https://www.djangoproject.com/) - The web framework used
 * [Bootstrap](https://getbootstrap.com/) - User Interface
 * [Visual Studio Code](https://code.visualstudio.com/) - Text editor Used
 

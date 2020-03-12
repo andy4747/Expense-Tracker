@@ -46,7 +46,7 @@ We use [git](http://semver.org/) for versioning. For the versions available, see
 
 ## Author
 
-* **Angel Dhakal** - *Initial work* - [PurpleBooth](https://github.com/AnjalDhakal/customer_relationship_management)
+* **Angel Dhakal** - *Initial work* - (https://github.com/AnjalDhakal/customer_relationship_management)
 
 ## License
 

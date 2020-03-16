@@ -71,5 +71,3 @@ def remove_items(request):
             return redirect('remove')
 
     return render(request, 'cms_app/remove.html')
-
-

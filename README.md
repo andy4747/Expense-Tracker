@@ -1,6 +1,6 @@
 # Project Title
 
-Customer Relation Management
+Expense Tracker
 
 ![](static/images/readmeimg.png)
 
@@ -29,7 +29,7 @@ Go to the folder you have cloned then run the following code in your terminal
 python manage.py runserver
 ```
 
-Then go to https://localhost:8000/ in your browser and enjoy
+Then go to https://localhost:8000/ in your browser, Its Done!
 
 
 
@@ -37,7 +37,6 @@ Then go to https://localhost:8000/ in your browser and enjoy
 
 * [Django](https://www.djangoproject.com/) - The web framework used
 * [Bootstrap](https://getbootstrap.com/) - User Interface
-* [Visual Studio Code](https://code.visualstudio.com/) - Text editor Used
 
 
 ## Versioning
@@ -46,7 +45,7 @@ We use [git](http://semver.org/) for versioning. For the versions available, see
 
 ## Author
 
-* **Angel Dhakal** - *Initial work* - (https://github.com/AnjalDhakal/customer_relationship_management)
+* **Angel Dhakal** - *Initial work* - (https://github.com/AnjalDhakal/Expense-Tracker)
 
 ## License
 

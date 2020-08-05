@@ -21,7 +21,7 @@ After installing python and django follow the steps below
 Clone or download the repository in your system
 
 ```
-git clone https://github.com/AnjalDhakal/customer_relationship_management
+git clone https://github.com/AnjalDhakal/Expense-Tracker
 ```
 Go to the folder you have cloned then run the following code in your terminal
 
@@ -47,7 +47,3 @@ We use [git](http://semver.org/) for versioning. For the versions available, see
 
 * **Angel Dhakal** - *Initial work* - (https://github.com/AnjalDhakal/Expense-Tracker)
 
-## License
-
-You can only use this product for testing and personal purposes (NOT FOR DEPLOYMENT) 
-                        © 2020 Angel dhakal, angeldhakal.tk
